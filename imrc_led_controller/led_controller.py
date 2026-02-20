@@ -22,11 +22,11 @@ class LedController(Node):
         self.pub = self.create_publisher(LedData, 'led_data', 10)
         self.sub = self.create_subscription(LedControl, 'led_cmd', self.led_cmd_callback, 10)
         self.logger = self.get_logger()
-        self.logger.warn("LED controller node initialized.")
+        self.logger.info("LED controller node initialized.")
 
 
     def led_cmd_callback(self, msg):
-        print("aaafjuwefuo")
+        self.logger.info("Received led command | index: {0}, color: {1}, brightness: {2}, mode: {3}".format(msg.led_index, msg.led_color, msg.led_brightness, msg.led_mode))
         brightness = 0.0
         if(msg.led_brightness < 0.0):
             brightness = 0.0
