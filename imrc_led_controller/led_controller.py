@@ -9,7 +9,7 @@ COLOR_VALUES = [
     {"color": "RED", "value_r": 255, "value_g": 0, "value_b": 0},
     {"color": "GREEN", "value_r": 0, "value_g": 255, "value_b": 0},
     {"color": "BLUE", "value_r": 0, "value_g": 0, "value_b": 255},
-    {"color": "WHITE", "value_r": 255, "value_g": 0, "value_b": 255},
+    {"color": "WHITE", "value_r": 255, "value_g": 255, "value_b": 255},
 
     {"color": "CYAN", "value_r": 0, "value_g": 255, "value_b": 255},
     {"color": "PURPLE", "value_r": 255, "value_g": 0, "value_b": 255},
